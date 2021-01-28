@@ -1,0 +1,140 @@
+body * {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	padding: 0.5em 1.2em;
+	margin: 0 5px;
+	border-radius: 4px;
+	border-style: solid;
+}
+
+/*====================Main body====================*/
+
+#main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#main-padding {
+	height: 200px;
+}
+
+@media (max-height: 700px) {
+	#main-padding {
+		height: 150px;
+	}
+}
+
+#search-container {
+	border-width: 2px;
+	border-color: rgb(223, 225, 229);
+	border-style: solid;
+	padding: 1em 0.8em;
+	margin: 2em 0;
+	border-radius: 2em;
+}
+
+#search-icon {
+	height: 20px;
+	width: 20px;
+}
+
+#search-input {
+	border: none;
+	height: 1em;
+	width: 30em;
+}
+
+#search-buttons button {
+	background-color: rgb(242, 242, 242);
+	border-color: rgb(242, 242, 242);
+	color: rgb(95, 99, 104);
+}
+
+#search-buttons button:hover {
+	background-color: rgb(246, 246, 246);
+	border-color: rgb(198, 198, 198);
+	color: rgb(34, 34, 34);
+}
+
+#search-buttons button:active, #search-buttons button:focus {
+	border-color: rgb(77, 144, 254);
+}
+
+/*====================Header, footer====================*/
+
+#header, #footer {
+	/*flex*/
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	/*make it span the entire width*/
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+#header {
+	top: 10px;
+	font-size: 13px;
+}
+
+#header * {
+	margin: 0 0.7em;
+}
+
+#btn-sign-in {
+	background-color: #4486F7;
+	border-color: #4486F7;
+	color: white;
+	font-weight: bold;
+	border-radius: 0px;
+	padding: 0.5em 0.8em;
+}
+
+#btn-sign-in:active {
+	background-color: #3D78DE;
+	border-top-color: #3368C1;
+}
+
+#btn-grid {
+	vertical-align: middle;
+	opacity: 50%;
+}
+
+#btn-grid:hover, #btn-grid:active {
+	opacity: 80%;
+}
+
+#footer {
+	background-color: #F2F2F2;
+	color: #5F6368;
+	/*align to bottom*/
+	bottom: 0px;
+	border-top-width: 1px;
+	border-style: solid;
+	border-color: #E4E4E4;
+}
+
+#footer a {
+	color: rgb(95, 99, 104);
+	margin: 0 1em;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+
+}
